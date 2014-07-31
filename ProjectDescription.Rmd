@@ -1,0 +1,12 @@
+---
+title: "Macro Analysis for Introductory macroeconomics"
+author: "G Green PhD"
+date: "Wednesday, July 30, 2014"
+output: html_document
+---
+##Project Description
+
+This file will use R to extract data from FRED, manipulate the data, draw some pictures of the data. Do some statistical analysis of the data.
+
+All of the macro data that I could possibly ever want is at FRED. Rather than download every file with R I'm going to create an excel file with the data that I want. I'll use R to extract the data from the excel file. Getting the data in a clean format will be easiest in this format.
+
