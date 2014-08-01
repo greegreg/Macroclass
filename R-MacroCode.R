@@ -54,3 +54,27 @@ MD$RG<-MD$G/MD$GDPDef
 MD$RNX<-MD$NX/MD$GDPDef
 head(MD)
 
+#Create a function for calculating rates of growth between adjacent points.
+growth<-function(x){
+    n<-length(x)#We must do n-1 interations through the vector
+    gr<-vector()
+    gr[1]<-NA #because of the method of growth rate calculation we will lose one data point
+    x0<-x[1]#Initialize the calculation
+    
+    for(i in 2:n){
+        x1<-x[i]#Get the 'most recent' data point
+        temp<-(x1/x0-1)*4#The growth rate calculation annualized
+        gr[i]<-temp#updates the vector
+        x0<-x1 #uptdate the x0 variable
+    }
+    gr #send this vector as output
+}
+
+#Construct some growth rates
+MD$gRGDP<-growth(MD$RGDP)
+MD$gRC<-growth(MD$RC)
+MD$gRI<-growth(MD$RI)
+MD$gRG<-growth(MD$RG)
+MD$gRNX<-growth(MD$RNX)
+head(MD)
+

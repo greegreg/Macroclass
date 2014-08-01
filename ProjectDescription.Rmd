@@ -10,3 +10,15 @@ This file will use R to extract data from FRED, manipulate the data, draw some p
 
 All of the macro data that I could possibly ever want is at FRED. Rather than download every file with R I'm going to create an excel file with the data that I want. I'll use R to extract the data from the excel file. Getting the data in a clean format will be easiest in this format.
 
+I have constructed a database of macro variables used in my class, an http address where the data lives, the frequency the data is reported and the line in the text file where the data startes.
+
+ _________________
+ 
+ Variable Name  |  http address | Data Starts |  Frequency collected
+ 
+ _________________
+ 
+ Try an equation
+ \begin{equation}\lab{E:E1}
+    f(x)=x^2-2x-10
+  \end{equation}
